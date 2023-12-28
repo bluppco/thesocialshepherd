@@ -1,0 +1,26 @@
+@font-face {
+
+    font-family: "Gilmer";
+    src: url("/fonts/gilmer-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: "Gilmer";
+    src: url("/fonts/gilmer-bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: "Post Box";
+    src: url("/fonts/post-box.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
