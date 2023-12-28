@@ -1,18 +1,23 @@
-<section class="bg-white">
-  <div class="container mx-auto py-12 px-6">
-    <h2 class="text-2xl font-semibold text-center mb-8">
-      Brands that trust us to drive more revenue
-    </h2>
-    <div class="flex flex-wrap justify-center items-center space-x-4 space-y-4">
-      <!-- Replace these placeholders with actual image tags for brand logos -->
-      <img src="path-to-uniqlo-logo.svg" alt="UNIQLO" class="h-12">
-      <img src="path-to-easyjet-logo.svg" alt="easyJet holidays" class="h-12">
-      <img src="path-to-premierinn-logo.svg" alt="Premier Inn" class="h-12">
-      <!-- ... More logos -->
-      <img src="path-to-19crimes-logo.svg" alt="19 Crimes" class="h-12">
-      <img src="path-to-neptune-logo.svg" alt="NEPTUNE" class="h-12">
-      <img src="path-to-verylazy-logo.svg" alt="VeryLazy" class="h-12">
-      <!-- ... More logos -->
-    </div>
-  </div>
-</section>
+---
+import Container from "../../layouts/Container.astro"
+import H2 from "../atoms/H2.astro"
+---
+<Container>
+	<section class="flex flex-col gap-8">
+		<!-- THIS IS INCORRECT AS CENTER SHOULD BE A P LIKE ELEMENT PROPERTY -->
+		<div class="text-center">
+			<H2>Brands that trust us to drive more revenue</H2>
+		</div>
+		<div class="grid grid-cols-4 gap-4">
+			{
+				Array(8).fill(0).map( ( value ) => {
+
+					return (
+						<div class="bg-zinc-200 h-full aspect-video" />
+					)
+
+				})
+			}
+		</div>
+	</section>
+</Container>
