@@ -1,20 +1,18 @@
-<section class="bg-white">
-  <div class="container mx-auto flex items-center justify-between py-12 px-4">
-    <!-- Text Section -->
-    <div>
-      <h1 class="text-5xl font-bold leading-tight mb-4 font-gilmer">
-        The results-driven Social first agency you've been looking for.
-      </h1>
-      <a href="#" class="text-teal-500 font-semibold hover:underline">
-        Enquire Now
-      </a>
-      <!-- Include decorative graphics as per design -->
-    </div>
-
-    <!-- Image Section - Placeholder for mobile phone image -->
-    <div>
-      <img src="path-to-your-mobile-image.jpg" alt="Mobile phone" class="max-w-xs">
-      <!-- Include decorative graphics as per design -->
-    </div>
-  </div>
-</section>
+---
+import Container from "../../layouts/Container.astro"
+import Button from "../atoms/Button.astro"
+import H1 from "../atoms/H1.astro"
+---
+<Container>
+	<section class="h-screen">
+		<div class="grid grid-cols-2 items-center">
+			<div class="flex flex-col gap-4">
+				<H1>The results-driven Social first agency you've been looking for.</H1>
+				<Button>Enquire Now</Buton>
+			</div>
+			<div class="bg-zinc-200 w-full aspect-square">
+				<!-- // IMAGE WILL COME HERE -->
+			</div>
+		</div>
+	</section>
+<Container>
